@@ -32,10 +32,10 @@ alex:myproject alex$ cd myproject
 /*----------------------------------*/ (III)
 //! GIT TOUCH     VS    TOUCH
 // we can create a NEW FILE in our project folder using the "touch" command
-alex:myproject alex$ git touch newfile.txt
+alex:myproject alex$ git touch newfile.txt  // GIT TOUCH
 
 // "TOUCH" creates a new file in the same way that creating a file manually on our computer works
-alex:myproject alex$ touch newfile.txt
+alex:myproject alex$ touch newfile.txt  // TOUCH
 
 
 
@@ -67,3 +67,22 @@ alex:myproject alex$ git add newfile.txt
 // and we will see that our newfile.txt is ready to be committed 
 // it is not actually part of our project just yet, it is in the waiting room
 kris:myproject kris$ git add newfile.txt
+
+
+
+
+/*----------------------------------*/
+/*----------------------------------*/ (VI)
+//! GIT COMMIT
+// the "git commit" command will create a new commit of our files in the staging area
+kris:myproject kris$ git commit
+
+
+
+
+/*----------------------------------*/
+/*----------------------------------*/ (VII)
+//! -m "djkflqdjlfj"  => COMMIT MESSAGE
+// we can add a COMMIT MESSAGE
+//! this is the point where the files we have added really become part of our project
+kris:myproject kris$ git commit -m "create this and that"
