@@ -17,7 +17,7 @@ alex:myproject alex$ git status
 /*----------------------------------*/
 /*----------------------------------*/ (II)
 //! GIT ADD
-// sincez we haven't added any files to our project
+// since we haven't added any files to our project
 // the computer will show us that no files are being tracked => (nothing to commit........)
 //?? (TERMINAL)------------------ 
 alex:myproject alex$ git status
