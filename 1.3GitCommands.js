@@ -8,7 +8,7 @@
 /*----------------------------------*/ (I)
 //! GIT STATUS
 // this command allows us to check on the current status of our project
-//?? (TERMINAL)------------------ 
+// (TERMINAL)------------------ 
 alex:myproject alex$ git status
 
 
@@ -19,8 +19,11 @@ alex:myproject alex$ git status
 //! GIT ADD
 // since we haven't added any files to our project
 // the computer will show us that no files are being tracked => (nothing to commit........)
-//?? (TERMINAL)------------------ 
-alex:myproject alex$ git status
+// (TERMINAL)------------------ 
+alex:myproject alex$ git status 
+On branch master 
+Initial commit 
+nothing to commit (create/copy files and use "git add" to track
 
 // let's navigate to our myproject
 alex:myproject alex$ cd myproject
@@ -29,8 +32,8 @@ alex:myproject alex$ cd myproject
 
 
 /*----------------------------------*/
-/*----------------------------------*/ (III)
-//! GIT TOUCH     VS    TOUCH
+/*----------------------------------*/ (III) (what's the difference??)
+//! GIT TOUCH    (VS)    TOUCH
 // we can create a NEW FILE in our project folder using the "touch" command
 alex:myproject alex$ git touch newfile.txt  // GIT TOUCH
 
@@ -44,7 +47,7 @@ alex:myproject alex$ touch newfile.txt  // TOUCH
 /*----------------------------------*/ (IV)
 //! LS
 // we can cthen use a command called "ls"
-// to list all the files and folders in our current directory
+// to LIST all the files and folders in our current directory
 // let us see all the files and folders in our directory
 alex:myproject alex$ ls 
 
