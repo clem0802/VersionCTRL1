@@ -17,10 +17,11 @@ meg:myproject meg$ git log
 
 /*----------------------------------*/
 /*----------------------------------*/ (II)
-//! GIT COMMIT --AMEND
+// GIT COMMIT --AMEND
 // we can also amend previous commits if we need to add or change old commit messages 
 // by using --amend
 // (TERMINAL)------------------ 
+// GIT COMMIT --AMEND -M
 meg:myproject meg$ git commit --amend -m "update message about newfile.txt"
 
 // we can use "git commit --amend" and "-m" to change our message in our previous commit
@@ -46,3 +47,9 @@ meg:myproject meg$ git log
 // => we can VIEW our PAST COMMITS and any amendments we have made //!
 // (TERMINAL)------------------ 
 meg:myproject meg$ git reflog
+
+// NB
+"git log" shows COMMIT HISTORY
+"git reflog" shows any AMENDMENTS made
+
+
