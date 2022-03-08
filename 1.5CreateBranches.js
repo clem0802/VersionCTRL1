@@ -7,11 +7,11 @@
 /*----------------------------------*/
 /*----------------------------------*/ (I)
 //! VERSION CONTROL
-// Version Control is a type of software that helps developers track changes in a code project like the one below
-// for example, version control lets us look at a previous version of a project
+// "VC" is a type of software that helps developers track changes in a code project like the one below
+// for example, "VC" lets us look at a previous version of a project
 // where we used different CSS styles
 
-//?? (HTML)------------------
+// (HTML)------------------
 <!doctype html>
 <html>
     <head>
@@ -24,7 +24,7 @@
 </html>
 
 
-//?? (CSS)------------------
+// (CSS)------------------
 a {
     background-color: orange;
     position: relative;
@@ -44,7 +44,7 @@ img {
 // these are snapshots of our project at different points in time
 // Commit_1 is the state of our code at a point in time
 // if we make further code changes and commit them, we get Commit_2
-//?? (TERMINAL)------------------ 
+// (TERMINAL)------------------ 
 Main Branch (Master branch)
 Main--Commit_1--Commit_2
 
@@ -56,7 +56,7 @@ Main--Commit_1--Commit_2
 //! BRANCHES
 // successive commits make up a BRANCH, like the "Main Branch" branch here, also called "Master"
 // the "Main Branch" is important because it contains the main version of our project code
-//?? (TERMINAL)------------------ 
+// (TERMINAL)------------------ 
 Main Branch (Master branch)
 Main--Commit_1--Commit_2--Commit_3
 
@@ -67,7 +67,7 @@ Main--Commit_1--Commit_2--Commit_3
 /*----------------------------------*/ (IV)
 //! GIT BRANCH
 // to  CREATE A NEW BRANCH, we use the "git branch" command with th enew branch's name, like "new_feature_1"
-//?? (TERMINAL)------------------ 
+// (TERMINAL)------------------ 
 git branch new_feature_1
 
 
@@ -86,14 +86,15 @@ git branch -d new_feature_1
 /*----------------------------------*/
 /*----------------------------------*/ (V)
 //! BRANCHING
-// BRANCHING is a useful feature of GIT that copies the code of an existing branch, like "Main"
-// and starts a NEW BRANCH
-// BRANCHING allow developers to work on new features without breaking the main code of our project
+// BRANCHING is a useful feature of GIT that copies the code of an existing branch (into a new one), 
+// like "Main", and starts a NEW BRANCH
+// BRANCHING allow developers to work on new features WITHOUT breaking the "main code" of our project
 // the "New Feature Branch" copies the code state at "Main--Commit_1"
 // then, it adds its own code changes with "Commit_A" and "Commit_B"
-//? we make a new branch when implementing a NEW FEATURE
-//? since they are on a different branch, code changes in "Commit_A" and "Commit_B" don't affect the project state in the "Main" branch
-//?? (TERMINAL)------------------ 
+// we make a new branch when implementing a NEW FEATURE
+// since they are on a different branch, code changes in "Commit_A" and "Commit_B" 
+// don't affect the project state in the "Main" branch
+// (TERMINAL)------------------ 
 Main Branch (Master branch)
 Main--Commit_1
         \
@@ -109,8 +110,9 @@ Main--Commit_1
 /*----------------------------------*/ (VI)
 //! GIT CHECKOUT
 // when creating a new branch with "GIT BRANCH", we stay on our current branch, "Main" branch
+// "GIT BRANCH" doesn't take us automatically to the newly created branch
 // we can use the "GIT CHECKOUT" command to navigate to any branch, including the new branch that was just created
-//?? (TERMINAL)------------------ 
+// (TERMINAL)------------------ 
 git checkout new_feature_1
 
 
@@ -123,7 +125,7 @@ git checkout new_feature_1
 // we can use "git checkout -b" to create a new branch like "new_feature_1"
 // and navigate to it in one ecommand
 //! GIT CHECKOUT -B = GIT CHECKOUT + GIT BRANCH
-//?? (TERMINAL)------------------ 
+// (TERMINAL)------------------ 
 git checkout -b new_feature_1
 
 
@@ -132,9 +134,9 @@ git checkout -b new_feature_1
 /*----------------------------------*/
 /*----------------------------------*/ (VIII)  !!!
 //! MERGING BRANCHES
-// Mergin is a feature we can use to combine code changes from different branches
+// Merging is a feature we can use to combine code (changes) from different branches
 // we can combine our "new_feature" branch with our "main" branch
-//?? (TERMINAL)------------------ 
+// (TERMINAL)------------------ 
 Main Branch (Master branch)
 
 Main--Commit_1--------Merged_Commit
@@ -150,10 +152,10 @@ Main--Commit_1--------Merged_Commit
 
 /*----------------------------------*/
 /*----------------------------------*/ (IX)
-//! MERGE
+//! MERGING
 // before merging, we have to commit our changes using "git commit -m"
 // where "-m" stands for message
-//?? (TERMINAL)------------------ 
+// (TERMINAL)------------------ 
 git commit -m "completed new_feature_1"
 
 
@@ -161,10 +163,10 @@ git commit -m "completed new_feature_1"
 
 /*----------------------------------*/
 /*----------------------------------*/ (X)
-//! MERGE
+//! GIT MERGE
 // we are currently on our "new_feature_1" branch
 // which has "Commit_1" and "Commit_2"
-//?? (TERMINAL)------------------ 
+// (TERMINAL)------------------ 
 Main Branch (Master branch)
 
 Main--Commit_1
@@ -196,7 +198,7 @@ git branch -d new_feature_1
 // and we will see messages about MERGE FAILED
 $ git merge new_feature_1
 
-// to resolve a MERGE CONFLICT, we look at the conflicting code, like this "p" element, and choose which branch's version to keep
+// to resolve a "MERGE CONFLICT", we look at the conflicting code, like this "p" element, and choose which branch's version to keep
 <<<<<<< HEAD 
 <p>One Developer updated this p element</p>
 =======
@@ -214,5 +216,5 @@ git commit -m "finished feature"
 // switch to "main"
 git checkout main
 
-// and then merge "new_feature" into "main"
+// and then MERGE "new_feature" INTO "main"
 git merge new_feature
