@@ -2,10 +2,14 @@
 /*----------------------------------*/
 /*----------------------------------*/ (I)
 //! VERSION CONTROL
-// Version Contro allows developers to "time travel" to previous versions of a project
-// Version Contro allows many developers to wrok easily on the same project
+// "VC" allows developers to "time travel" to previous versions of a project
+// "VC" allows many developers to work easily on the same project
+// "VC" is a software that tracks what changes are made to a project
+// "VC" allows developers to create snapshots of a project at different points in time
+// "VC" allows developers to "time travel" to previous versions of a project
+// "VC" allows developers to "time travel" back to a version without the bug
 
-//?? (HTML)------------------
+// (HTML)------------------
 <!doctype html>
 <html>
     <head>
@@ -18,7 +22,7 @@
 </html>
 
 
-//?? (CSS)------------------
+// (CSS)------------------
 a {
     background-color: orange;
     position: relative;
@@ -112,5 +116,14 @@ p {
 /*----------------------------------*/ (IV)
 //! GIT => COMMIT
 // "Git" is a type of Version Control software that allows us to create COMMITS or snapshots of our project at different points in time
-// it is a vital tool in the tookit of any web developer
+// it is a vital tool in the toolkit of any web developer
 // here is a peek at how a Git commit looks
+
+commit 978b63054774433bfe6ba1c780d721293e28baa7 (HEAD -> master)
+Author: theweasel
+ <weasel@mail.com>
+Date:   Wed Feb 17 23:35:49 2021 -0800
+
+    add style to the h4 element
+
+
